@@ -181,13 +181,13 @@ target_link_libraries(upb_cc_bindings INTERFACE
   descriptor_upbproto
   upb_handlers
   upb)
-add_library(upb_test
-  tests/testmain.cc
-  tests/test_util.h
-  tests/upb_test.h)
-target_link_libraries(upb_test
-  upb_handlers
-  upb)
+# add_library(upb_test
+#   tests/testmain.cc
+#   tests/test_util.h
+#   tests/upb_test.h)
+# target_link_libraries(upb_test
+#   upb_handlers
+#   upb)
 install(FILES
   upb/decode.h
   upb/encode.h
